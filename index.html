@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>TITLE</p>
+            <p>AUTHOR</p>
+            <p>PAGES</p>
+            <p>COMPLETED</p>
+            <p>ACTION</p>
+        </div>
+        <div class="sidebar">
+            <p>LIBRARY</p>
+            <button class="newBook" onclick="prompt()"> + </button>
+        </div>
+        <div class="display">
+        </div>
+        
+        <div class="new">
+            <dialog>
+                <div class="box">
+                    <button type="button" id="close" onclick="closeDialog()">x</button>
+                    <p>Fill in the description:</p>
+                    <form action="dialog">
+                        <label for="title"> TITLE:
+                            <input type="text" id="title"></label>
+                        <label for="author"> AUTHOR:
+                            <input type="text" id="author"></label>
+                        <label for="pages"> PAGES
+                            <input type="text" id="pages"></label>
+                        <label for="completed"> COMPLETED?:
+                            <input type="checkbox" id="completed" value="checked"></label>
+                        <button type="submit" id="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+    </div>
+    <script src="library.js" defer></script>
+</body>
+</html>
